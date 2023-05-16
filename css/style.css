@@ -1,24 +1,27 @@
 :root{
     --tamañoCaja:800px;
+    background-image: url(/Imagenes/71519-playstation.jpg);
+    background-size: cover;
 }
+
+/* botones a la izquierda del mando */
 
 .botonesDireccion{
     display: grid;
     grid-template: repeat(3 , 1fr) / repeat(3, 1fr);
     border: 1px solid black;
+    border-radius: 50%;
     width: 90px;
-    height: 80px;
+    height: 90px;
 }
 
 .flechas{
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .flechas-izq{
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,15 +29,17 @@
 }
 
 .flechas-der{
-    border: 1px solid black;
+    
     display: flex;
     justify-content: center;
     flex-direction: row;
     transform: rotate(90deg);
 }
 
+/* Botones a la derecha del mando */
+
 .formas{
-    border: 1px solid black;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +47,7 @@
     color: red;
 }
 
-.triangulo{
+.formas:nth-child(2n){
     background: black;
     border-radius: 50%;
     width: 24px;
@@ -50,63 +55,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.triangulo{  
     color: green;
 }
 
 .equis{
-    background: black;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #428bca;
 }
 
 .cuadrado{
-    background: black;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
+    font-size: 24px;
     color: pink;
 }
 
 .redonda{
-    background: black;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 27px;
     color: red;
+    box-shadow: 41px 40px 10px 20px black outset;
 }
 
 .botonesAccion{
     display: grid;
     grid-template: repeat(3 , 1fr) / repeat(3, 1fr);
     border: 1px solid black;
-    width: 80px;
-    height: 80px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    
 }
+
+/* Parte de donde coges el mando */
 
 .trapecio-izq {
     width: 70px;
     height: 0px;
     border-right: 30px solid transparent;
     border-left: 40px solid transparent;
-    border-top: 100px solid grey;
+    border-top: 100px solid #8A98A1;
     display: flex;
     transform: rotate(16deg);
     position: relative;
-    left: 220px;
-    top: 98px;
+    left: 64px;
+    top: 79px;
 }
 
 .trapecio-der {
@@ -114,19 +106,47 @@
     height: 0px;
     border-right: 30px solid transparent;
     border-left: 40px solid transparent;
-    border-top: 100px solid grey;
+    border-top: 100px solid #8A98A1;
     display: flex;
     transform: rotate(-16deg);
     position: relative;
-    left: -15px;
-    top: 98px;
+    left: 120px;
+    top: 79px;
 }
+
+
+.circulo-peq-der {
+    width: 71px;
+    height: 70px;
+    border-radius: 50%;
+    background: #8A98A1;
+    position: relative;
+    left: -119px;
+    top: 118px;
+}
+
+.circulo-peq-izq {
+    width: 75px;
+    height: 70px;
+    border-radius: 50%;
+    background: #8A98A1;
+    position: relative;
+    left: -49px;
+    top: 118px;
+}
+
+/* Pate central del mando */
 
 .rectangulo {
     width: 180px; 
     height: 100px; 
     background: grey;
-    margin-top: 20px;
+    left: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .circulo-izq {
@@ -135,63 +155,52 @@
     height: 150px;
     border-radius: 50%;
     background: grey;
-    position: relative;
-    left: 41px;
+    position: absolute;
+    left: 200px;
     align-items: center;
     justify-content: center;
+    box-shadow: -5px 0px 1px black inset;
 }
 
 .circulo-der {
     display: flex;
     width: 150px;
     height: 150px;
+    left: -46px;
     border-radius: 50%;
     background: grey;
     position: relative;
-    left: -161px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    box-shadow: 5px 0px 1px black inset;
 }
 
-.circulo-peq-der {
-    width: 71px;
-    height: 70px;
-    border-radius: 50%;
-    background: grey;
-    position: relative;
-    left: -224px;
-    top: 150px;
-}
-
-.circulo-peq-izq {
-    width: 75px;
-    height: 70px;
-    border-radius: 50%;
-    background: grey;
-    position: relative;
-    left: 117px;
-    top: 150px;
-}
+/* Contenedores de elementos */
 
 .contenedor{
     width: var(--tamañoCaja);
-    height: 400px;
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contenedor-tv{
     width: var(--tamañoCaja);
-    height: 400px;
+    height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
+
+
+/* Ventana superior (Televisor) */
 
 .tv{
     width: 400px; 
-    height: 300px; 
-    border: 1px solid #555;
+    height: 250px; 
+    border: 10px solid black;
     background: #428bca; 
 }
 
@@ -199,4 +208,69 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
+}
+
+.apoyo{
+    width: 140px; 
+    height: 14px;
+    background-color: black;
+    margin-top: 10px;
+    border-radius: 20%;
+}
+
+.palitoDer{
+    width: 60px; 
+    height: 10px;
+    background-color: black;
+    transform: rotate(46deg);
+    margin-top: 10px;
+}
+.palitoIzq{
+    width: 60px; 
+    height: 10px;
+    transform: rotate(-46deg);
+    background-color: black;
+    margin-top: 10px;
+}
+
+.cajaPalitos{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Botones y logos de en medio del mando */
+
+#sony{
+    width: 60px;
+    height: 30px;
+}
+
+#logo{
+    width: 60px;
+    height: 40px;
+}
+
+
+#botonesSelStar{
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#select{
+     width: 17px; 
+     height: 6px; 
+     background: #4b4a4a;
+     border-radius: 15%;
+}
+
+#start{
+        border-left: 18px solid #4b4a4a;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-radius: 20%;
+}
+
+p{
+    font-size: 6px;
 }

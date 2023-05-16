@@ -10,12 +10,29 @@
   <body>
     <div class="contenedor-tv">
       <div class="tv">
-        <video autoplay muted loop>
-          <source src="/Imagenes/flujo-159627.mp4" />
+        <video id="enchegar">
+          <source src="/Imagenes/ff9.mp4" />
         </video>
       </div>
+      <div class="cajaPalitos">
+        <div class="palitoIzq"></div>
+        <div class="palitoDer"></div>
+      </div>
+      <div class="apoyo"></div>
     </div>
     <div class="contenedor">
+      <div class="rectangulo">
+        <div><img id="sony" src="/Imagenes/sony.png" /></div>
+        <div><img id="logo" src="/Imagenes/logo-ps1.png" /></div>
+        <div id="botonesSelStar">
+          <div id="select" onclick="stopVid()"></div>
+          <div id="start" onclick="playVid()"></div>
+        </div>
+        <div id="botonesSelStar">
+          <div><p>SELECT</p></div>
+          <div><p>START</p></div>
+        </div>
+      </div>
       <div class="trapecio-izq"></div>
       <div class="circulo-peq-izq"></div>
       <div class="circulo-izq">
@@ -31,7 +48,6 @@
           <div class="flechas"></div>
         </div>
       </div>
-      <div class="rectangulo"></div>
       <div class="trapecio-der"></div>
       <div class="circulo-der">
         <div class="botonesAccion">
@@ -49,5 +65,17 @@
 
       <div class="circulo-peq-der"></div>
     </div>
+
+    <script>
+      var vid = document.getElementById("enchegar");
+
+      function playVid() {
+        vid.play();
+      }
+
+      function stopVid() {
+        vid.pause();
+      }
+    </script>
   </body>
 </html>
