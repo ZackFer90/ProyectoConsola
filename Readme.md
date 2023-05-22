@@ -20,7 +20,7 @@
 
 ## Objetivo 🎯
 
-Este proyecto requería un modelo degit consola.
+Este proyecto requería un modelo de consola.
 
 ## Sobre el proyecto 🔎
 
@@ -47,41 +47,9 @@ Decidí crear una aplicación web basada en el diseño de un mando de ps1, que m
 ## Vistas
 
 Resultado
-<img src="imagenes/final.PNG">
+<img src="Imagenes/final.PNG">
 Modelo
-<img src="imagenes/mando-ps1.jpg">
-
-<!--
-## Futuras funcionalidades
-
-✅ Vista actualizar rutinas
-⬜ Filtar por nombre de rutina
-⬜ Validaciones de campos en crear rutina
-⬜ ...
-
-
-## Contribuciones
-
-Las sugerencias y aportaciones son siempre bienvenidas.
-
-Puedes hacerlo de dos maneras:
-
-1. Abriendo una issue
-2. Crea un fork del repositorio
-   - Crea una nueva rama
-     ```
-     $ git checkout -b feature/nombreUsuario-mejora
-     ```
-   - Haz un commit con tus cambios
-     ```
-     $ git commit -m 'feat: mejora X cosa'
-     ```
-   - Haz push a la rama
-     ```
-     $ git push origin feature/nombreUsuario-mejora
-     ```
-   - Abre una solicitud de Pull Request
--->
+<img src="Imagenes/mando-ps1.jpg">
 
 ## Licencia
 
@@ -94,14 +62,6 @@ Para conseguir mi objetivo he recopilado información de:
 - https://drive.google.com/file/d/1FFHcZEaBy4WhfLICcMD_Ih8t758nApkk/view
 - https://drive.google.com/file/d/11AwoAdcGGJPWCwY3h_sqrYVhJGXZCRbC/view
 - https://www.w3schools.com/cssref/css3_pr_transform.php
-
-## Desarrollo:
-
-```js
-const developer = "datata";
-
-console.log("Desarrollado por: " + datata);
-```
 
 ## Agradecimientos:
 
