@@ -20,7 +20,7 @@
 
 ## Objetivo 🎯
 
-Este proyecto requería conexión a una API funcional para crear una web.
+Este proyecto requería un modelo degit consola.
 
 ## Sobre el proyecto 🔎
 
@@ -29,7 +29,7 @@ Decidí crear una aplicación web basada en el diseño de un mando de ps1, que m
 ## Deploy 🚀
 
 <div align="center">
-    <a href=" https://zackfer90.github.io/ProyectoConsola/"><strong>Url a producción </strong></a>🚀🚀🚀
+    <a href="https://github.com/ZackFer90/Prueba-git"><strong>Url a producción </strong></a>🚀🚀🚀
 </div>
 
 ## Stack
@@ -47,9 +47,9 @@ Decidí crear una aplicación web basada en el diseño de un mando de ps1, que m
 ## Vistas
 
 Resultado
-<img src="./imagenes/final.png">
+<img src="imagenes/final.PNG">
 Modelo
-<img src="./imagenes/mando-ps1.jpg">
+<img src="imagenes/mando-ps1.jpg">
 
 <!--
 ## Futuras funcionalidades
