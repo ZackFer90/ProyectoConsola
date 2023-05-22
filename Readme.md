@@ -29,7 +29,7 @@ Decidí crear una aplicación web basada en el diseño de un mando de ps1, que m
 ## Deploy 🚀
 
 <div align="center">
-    <a href="https://github.com/ZackFer90/Prueba-git"><strong>Url a producción </strong></a>🚀🚀🚀
+    <a href="https://github.com/ZackFer90/ProyectoConsola"><strong>Url a producción </strong></a>🚀🚀🚀
 </div>
 
 ## Stack
